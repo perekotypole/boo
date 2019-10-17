@@ -4,6 +4,8 @@
 	<title>ports</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	
 </head>
 <body>
 	<div class="container-fluid">
@@ -12,47 +14,47 @@
 				<div class="row">
 					<div class="col text-center bg-dark text-light">Доп. инфа</div>
 				</div>
-				<div class="row border-bottom">
-					<div class="col-4 font-weight-bold">Описание</div>
-					<div class="col-8">smth smth smth smth smth smth</div>
+				<div class="form-group row border-bottom">
+					<div class="col-lg-4 col-md-4 col-sm font-weight-bold">Описание</div>
+					<div class="field col-lg-8 col-md-8 col-sm">smth smth smth smth smth smth</div>
 				</div>
-				<div class="row border-bottom">
-					<div class="col-4 font-weight-bold">Положение</div>
-					<div class="col-8">smth smth smth</div>
+				<div class="form-group row border-bottom">
+					<div class="col-lg-4 col-md-4 col-sm font-weight-bold">Положение</div>
+					<div class="field col-lg-8 col-md-8 col-sm">smth smth smth</div>
 				</div>
-				<div class="row border-bottom">
-					<div class="col-4 font-weight-bold">Прошивка</div>
-					<div class="col-8">smth smth</div>
+				<div class="form-group row border-bottom">
+					<div class="col-lg-4 col-md-4 col-sm font-weight-bold">Прошивка</div>
+					<div class="field col-lg-8 col-md-8 col-sm">smth smth</div>
 				</div>
-				<div class="row border-bottom">
-					<div class="col-4 font-weight-bold">Ревизия</div>
-					<div class="col-8">smth</div>
+				<div class="form-group row border-bottom">
+					<div class="col-lg-4 col-md-4 col-sm font-weight-bold">Ревизия</div>
+					<div class="field col-lg-8 col-md-8 col-sm">smth</div>
 				</div>
-				<div class="row border-bottom">
-					<div class="col-4 font-weight-bold">IP</div>
-					<div class="col-8">smth smth</div>
+				<div class="form-group row border-bottom">
+					<div class="col-lg-4 col-md-4 col-sm font-weight-bold">IP</div>
+					<div class="field col-lg-8 col-md-8 col-sm">smth smth</div>
 				</div>
-				<div class="row border-bottom">
-					<div class="col-4 font-weight-bold">MAC</div>
-					<div class="col-8">smth smth smth</div>
+				<div class="form-group row border-bottom">
+					<div class="col-lg-4 col-md-4 col-sm font-weight-bold">MAC</div>
+					<div class="field col-lg-8 col-md-8 col-sm">smth smth smth</div>
 				</div>
-				<div class="row border-bottom">
-					<div class="col-4 font-weight-bold">hlVlan</div>
-					<div class="col-8">smth</div>
+				<div class="form-group row border-bottom">
+					<div class="col-lg-4 col-md-4 col-sm font-weight-bold">hiVlan</div>
+					<div class="field col-lg-8 col-md-8 col-sm">smth</div>
 				</div>
-				<div class="row border-bottom">
-					<div class="col-4 font-weight-bold">loVlan</div>
-					<div class="col-8">smth</div>
+				<div class="form-group row border-bottom">
+					<div class="col-lg-4 col-md-4 col-sm font-weight-bold">loVlan</div>
+					<div class="field col-lg-8 col-md-8 col-sm">smth</div>
 				</div>
-				<div class="row border-bottom">
-					<div class="col-4 font-weight-bold">Адресс</div>
-					<div class="col-8">
-						<p>smth smth smth smth smth</p>
-						<h6 class="text-secondary font-weight-light">switch #1</h6>
+				<div class="form-group row border-bottom">
+					<div class="col-lg-4 col-md-4 col-sm font-weight-bold">Адресс</div>
+					<div class="col-lg-8 col-md-8 col-sm">
+						<p class="field">smth smth smth smth smth</p>
+						<h6 id="switch" class="text-secondary font-weight-light">switch #1</h6>
 					</div>
 				</div>
 			</div>
-			<button class="btn btn-secondary btn-block btn-sm text-uppercase">edit</button>
+			<button type="button" class="btn btn-secondary btn-block btn-sm text-uppercase" data-toggle="modal" data-target="#modalForm">edit</button>
 		</div>
 		<div class="row btn-group btn-block no-gutters my-1 mx-auto">
 			<button class="col-lg-2 col-md-4 col-sm-6 col-xs btn btn-dark">something</button>
@@ -294,8 +296,80 @@
 				</div>
 			</div>
 
+			<!-- Модальное окно -->  
+			<div class="modal fade" id="modalForm" role="dialog">
+			  	<div class="modal-dialog">
+			    	<div class="modal-content">
+			      		<div class="modal-header">
+			      			<h4 class="modal-title">Modal title</h4>
+			        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          			<span aria-hidden="true">&times;</span>
+			        		</button>
+			      		</div>
+			      		<div class="modal-body">
+				     		<div class="form-group">
+	                            <label>Опис</label>
+	                            <input type="text" class="c_field form-control" id="changed_description">
+	                        </div>
 
+	                        <div class="form-group">
+	                            <label>Положение</label>
+	                            <input type="text" class="c_field form-control" id="changed_position">
+	                        </div>
+
+	                        <div class="form-group">
+	                            <label>Прошивка</label>
+	                            <input type="text" class="c_field form-control" id="changed_proshyvka">
+	                        </div>
+
+	                        <div class="form-group">
+	                            <label>Ревізія</label>
+	                            <input type="text" class="c_field form-control" id="changed_revision">
+	                        </div>
+
+	                        <div class="form-group">
+	                            <label>IP</label>
+	                            <input type="text" class="c_field form-control" id="changed_ip">
+	                        </div>
+
+	                        <div class="form-group">
+	                            <label>MAC</label>
+	                            <input type="text" class="c_field form-control" id="changed_mac">
+	                        </div>
+
+	                        <div class="form-group">
+	                            <label>hiVlan</label>
+	                            <input type="text" class="c_field form-control" id="changed_hiv">
+	                        </div>
+
+	                        <div class="form-group">
+	                            <label>loVlan</label>
+	                            <input type="text" class="c_field form-control" id="changed_lov">
+	                        </div>
+
+	                        <div class="form-group">
+	                            <label>Адреса</label>
+	                            <input type="text" class="c_field form-control" id="changed_address">
+	                        </div>
+	                        <div class="input-group">
+	                            <span class="input-group-addon">switch #</span>
+	                            <input type="text" class="form-control" id="changed_switch">
+	                        </div>
+				      	</div>
+			      		<div class="modal-footer">
+				        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        	<button type="button" class="btn btn-primary" id="save" data-dismiss="modal">Save changes</button>
+			      		</div>
+			    	</div>
+			  	</div>
+			</div>
 		</div>
 	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script/modal_form.js"></script>
 </body>
 </html>
