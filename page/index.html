@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Комутатори</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="overflow-hiden">
+	<div class="container-fluid no-gutters p-0">
+		<header class="no-gutters p-2 bg-primary d-flex justify-content-between">
+			<div class="col-lg-3 col-md-4">
+				<form>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="search...">
+						<div class="input-group-append">
+							<button class="btn btn-outline-light text-light" type="button">
+								<i class="fas fa-search"></i>
+							</button>
+					  	</div>
+					</div>
+				</form>
+			</div>
+			<div class="btn-group px-1">
+				<a href="#" class="btn btn-outline-light">
+					<i class="fas fa-map-marker-alt"></i>
+					locations
+				</a>
+				<a href="#" class="btn btn-outline-light">
+					<i class="fas fa-info-circle"></i>
+					support
+				</a>
+				<a href="#" class="btn btn-outline-light">
+					<i class="far fa-user"></i>
+					user
+				</a>
+				<a href="#" class="btn btn-light">
+					<i class="fas fa-sign-out-alt"></i>
+					exit
+				</a>
+			</div>
+		</header>
+
+		<div class="row no-gutters">
+			<div class="col-lg-2 col-md-12 col-sm-12">
+				<div>
+					<img src="image/SW.png" class="img-fluid">
+				</div>
+				
+				<nav class="p-0 navbar navbar-expand-lg flex-column">
+					<div class="d-flex justify-content-between mt-4 w-100 border-top border-dark">
+						<h3 class="navbar-brand ml-1">Навігація</h3>
+						<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#menushka" >
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+
+				  	<div id="menushka" class="collapse navbar-collapse w-100" >
+				  		<div class="btn-group-vertical w-100">
+				  			<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#one" >
+								Головна сторінка
+							</button>
+							<div id="one" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+					   		<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#two" >
+								Абоненти
+							</button>
+							<div id="two" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#three" >
+								Тарифи
+							</button>
+							<div id="three" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#four" >
+								Повідомлення
+							</button>
+							<div id="four" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#five" >
+								Бухгалтерія
+							</button>
+							<div id="five" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#six" >
+								Інтерфейси
+							</button>
+							<div id="six" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#seven" >
+								Обладнання
+							</button>
+							<div id="seven" class="collapse show border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">Вузли зв'язку</a>
+									</li>
+									<li>
+										<a href="#" class="dropdown-item">Муфти</a>
+									</li>
+									<li>
+										<a href="#" class="dropdown-item active">Комтатори</a>
+									</li>
+									<li>
+										<a href="#" class="dropdown-item">Wi-Fi</a>
+									</li>
+									<li>
+										<a href="#" class="dropdown-item">Медіаконвертери</a>
+									</li>
+									<li>
+										<a href="#" class="dropdown-item">Системні пристрої</a>
+									</li>
+									<li>
+										<a href="#" class="dropdown-item">Лінії зв'язку</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#eight" >
+								Журнал задач
+							</button>
+							<div id="eight" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#nine" >
+								Склад
+							</button>
+							<div id="nine" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#ten" >
+								Покриття
+							</button>
+							<div id="ten" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#elephan" >
+								Персонал
+							</button>
+							<div id="elephan" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#twelve" >
+								Рекламні компанії
+							</button>
+							<div id="twelve" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#thirteen" >
+								Блокнот
+							</button>
+							<div id="thirteen" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#fourteen" >
+								Статистика
+							</button>
+							<div id="fourteen" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#fifteen" >
+								Оператори
+							</button>
+							<div id="fifteen" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+
+							<button class="btn btn-block btn-outline-dark" data-toggle="collapse" data-target="#sixteen" >
+								Налаштування
+							</button>
+							<div id="sixteen" class="collapse border border-dark border-right w-100">
+								<ul class=" nav flex-column ml-2 ">
+									<li>
+										<a href="#" class="dropdown-item">test</a>
+									</li>
+								</ul>
+							</div>
+				  		</div>
+							
+				  	</div>
+				</nav>
+			</div>
+
+			<div class="no-gutters pl-lg-3 col-lg-10 col-md-12 col-sm-12">
+				<div class="border-bottom border-primary mb-1">
+					<h2 class="text-uppercase">обладнання/комутатори</h2>
+				</div>
+				<a href="#" class="btn btn-outline-primary">
+					повернутись до списку
+				</a>
+				<div class="row">
+					<div class="col-lg-5 col-md-4 col-sm-12">
+						<div class="form-group">
+							<p class="col mb-0 d-inline">Ім'я хоста: 192.168.0.1</p>
+							<a href="#" class="col">http://</a>
+							<a href="#" class="col">telnet://</a>
+						</div>
+						<img src="image/comm.jpg" class="img-fluid">
+						<div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>Назва</b></div>
+								<div class="col-6">
+									D-Link DES-1210-52
+									<a href="#">
+										<i class="fas fa-caret-right"></i>
+									</a>
+								</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>Вузл встановлення</b></div>
+								<div class="col-6">
+									<a href="#">щось</a>
+								</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>IP</b></div>
+								<div class="col-6">циферки</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>Вартысть по складу</b></div>
+								<div class="col-6">
+									<a href="#">0.00 uah</a>
+									<a href="#">
+										<i class="fas fa-caret-right"></i>
+									</a>
+								</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>Кількість портів</b></div>
+								<div class="col-6">50+-</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>Вільні порти</b></div>
+								<div class="col-6">всі</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>MAC-адрес</b></div>
+								<div class="col-6">щось страшне</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>Прошивка</b></div>
+								<div class="col-6"></div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>Потужність</b></div>
+								<div class="col-6">40 Вт</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>UPLINK-порт</b></div>
+								<div class="col-6"></div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>Остання активність</b></div>
+								<div class="col-6">заходив 5хв тому</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-6 text-right"><b>Дата встановлення</b></div>
+								<div class="col-6">все ти хочеш знати</div>
+							</div>
+							<div class="row">
+								<div class="col-6 text-right"><b>Щось там включено</b></div>
+								<div class="col-6">
+									<button class="btn btn-sm btn-outline-danger">
+										<i class="fas fa-power-off"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="card">
+							<div class="card-header">Ping</div>
+							<div class="list-group list-group-flush">
+								<p class="list-group-item">teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeext</p>
+								<p class="list-group-item">teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeext</p>
+							</div>
+						</div>
+						<br>
+						<div>
+							<p><b>SNMP-infa</b></p>
+							<div>
+								<div class="row border-bottom">
+									<div class="col-6 text-right"><b>Модель</b></div>
+									<div class="col-6">
+										text text text text text text text text text text text text text text
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-6 text-right"><b>Системне ім'я</b></div>
+									<div class="col-6">
+										щось
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+					</div>
+
+					<div class="col-lg-7 col-md-8 col-sm-12">
+						<div>
+							<div class="row bg-primary text-light">
+								<div class="col-1">#</div>
+								<div class="col-4">commtation of port</div>
+								<div class="col-2">port</div>
+								<div class="col-1">link</div>
+								<div class="col-4">trafic</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-1">
+									<p>1</p>
+									<button class="btn btn-sm btn-outline-primary">
+										<i class="fas fa-edit"></i>
+									</button>
+								</div>
+								<div class="col-4">
+									<div>
+										<p class="m-0">text
+											<a href="#">
+												<i class="fas fa-caret-right"></i>
+											</a>
+										</p>
+										<p class="m-0">text</p>
+										<p class="m-0">text</p>
+										<p class="m-0">text</p>
+									</div>
+										
+								</div>
+								<div class="col-2 bg-success text-light">active</div>
+								<div class="col-1 bg-success text-light">up 1Гбит</div>
+								<div class="col-4">
+									<div>in:
+										<span class="text-danger">41</span>TB
+										<span class="text-danger">935</span>GB
+										<span class="text-danger">996</span>MB
+										<span class="text-danger">930</span>KB
+										<span class="text-danger">626</span>B
+									</div>
+									<div>out:
+										<span class="text-danger">13</span>TB
+										<span class="text-danger">523</span>GB
+										<span class="text-danger">590</span>MB
+										<span class="text-danger">415</span>KB
+										<span class="text-danger">946</span>B
+									</div>
+								</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-1">
+									<p>2</p>
+								</div>
+								<div class="col-4">
+									<button class="btn btn-sm btn-outline-success">
+										<i class="fas fa-plus"></i>
+									</button>
+									<div><span class="bg-dark text-light m-0">text</span></div>
+									<p class="m-0">text</p>
+								</div>
+								<div class="col-2 bg-success text-light">active</div>
+								<div class="col-1 bg-danger text-light">down</div>
+								<div class="col-4">
+									<div>in:
+										<span class="text-danger">0</span>B
+									</div>
+									<div>out:
+										<span class="text-danger">0</span>B
+									</div>
+								</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-1">
+									<p>3</p>
+								</div>
+								<div class="col-4">
+									<button class="btn btn-sm btn-outline-success">
+										<i class="fas fa-plus"></i>
+									</button>
+									<div><span class="bg-dark text-light m-0">text</span></div>
+									<p class="m-0">text</p>
+								</div>
+								<div class="col-2 bg-success text-light">active</div>
+								<div class="col-1 bg-danger text-light">down</div>
+								<div class="col-4">
+									<div>in:
+										<span class="text-danger">0</span>B
+									</div>
+									<div>out:
+										<span class="text-danger">0</span>B
+									</div>
+								</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-1">
+									<p>4</p>
+								</div>
+								<div class="col-4">
+									<button class="btn btn-sm btn-outline-success">
+										<i class="fas fa-plus"></i>
+									</button>
+									<div><span class="bg-dark text-light m-0">text</span></div>
+									<p class="m-0">text</p>
+								</div>
+								<div class="col-2 bg-success text-light">active</div>
+								<div class="col-1 bg-danger text-light">down</div>
+								<div class="col-4">
+									<div>in:
+										<span class="text-danger">0</span>B
+									</div>
+									<div>out:
+										<span class="text-danger">0</span>B
+									</div>
+								</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-1">
+									<p>5</p>
+									<button class="btn btn-sm btn-outline-primary">
+										<i class="fas fa-edit"></i>
+									</button>
+								</div>
+								<div class="col-4">
+									<p class="m-0">text
+										<a href="#">
+											<i class="fas fa-caret-right"></i>
+										</a>
+									</p>
+									<p class="m-0">text</p>
+									<p class="m-0">text</p>
+									<p class="m-0">text</p>
+								</div>
+								<div class="col-2 bg-success text-light">active</div>
+								<div class="col-1 bg-success text-light">up 1Гбит</div>
+								<div class="col-4">
+									<div>in:
+										<span class="text-danger">41</span>TB
+										<span class="text-danger">935</span>GB
+										<span class="text-danger">996</span>MB
+										<span class="text-danger">930</span>KB
+										<span class="text-danger">626</span>B
+									</div>
+									<div>out:
+										<span class="text-danger">13</span>TB
+										<span class="text-danger">523</span>GB
+										<span class="text-danger">590</span>MB
+										<span class="text-danger">415</span>KB
+										<span class="text-danger">946</span>B
+									</div>
+								</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-1">
+									<p>6</p>
+									<button class="btn btn-sm btn-outline-primary">
+										<i class="fas fa-edit"></i>
+									</button>
+								</div>
+								<div class="col-4">
+									<p class="m-0">text
+										<a href="#">
+											<i class="fas fa-caret-right"></i>
+										</a>
+									</p>
+									<p class="m-0">text</p>
+									<p class="m-0">text</p>
+									<p class="m-0">text</p>
+								</div>
+								<div class="col-2 bg-success text-light">active</div>
+								<div class="col-1 bg-success text-light">up 1Гбит</div>
+								<div class="col-4">
+									<div>in:
+										<span class="text-danger">41</span>TB
+										<span class="text-danger">935</span>GB
+										<span class="text-danger">996</span>MB
+										<span class="text-danger">930</span>KB
+										<span class="text-danger">626</span>B
+									</div>
+									<div>out:
+										<span class="text-danger">13</span>TB
+										<span class="text-danger">523</span>GB
+										<span class="text-danger">590</span>MB
+										<span class="text-danger">415</span>KB
+										<span class="text-danger">946</span>B
+									</div>
+								</div>
+							</div>
+							<div class="row border-bottom">
+								<div class="col-1">
+									<p>7</p>
+									<button class="btn btn-sm btn-outline-primary">
+										<i class="fas fa-edit"></i>
+									</button>
+								</div>
+								<div class="col-4">
+									<p class="m-0">text
+										<a href="#">
+											<i class="fas fa-caret-right"></i>
+										</a>
+									</p>
+									<p class="m-0">text</p>
+									<p class="m-0">text</p>
+									<p class="m-0">text</p>
+								</div>
+								<div class="col-2 bg-success text-light">active</div>
+								<div class="col-1 bg-success text-light">up 1Гбит</div>
+								<div class="col-4">
+									<div>in:
+										<span class="text-danger">41</span>TB
+										<span class="text-danger">935</span>GB
+										<span class="text-danger">996</span>MB
+										<span class="text-danger">930</span>KB
+										<span class="text-danger">626</span>B
+									</div>
+									<div>out:
+										<span class="text-danger">13</span>TB
+										<span class="text-danger">523</span>GB
+										<span class="text-danger">590</span>MB
+										<span class="text-danger">415</span>KB
+										<span class="text-danger">946</span>B
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+	</div>
+
+	<script src="https://kit.fontawesome.com/a94d549010.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
